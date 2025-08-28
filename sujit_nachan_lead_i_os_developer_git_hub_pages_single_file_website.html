@@ -1,0 +1,418 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sujit Nachan – Lead iOS Developer</title>
+  <meta name="description" content="Lead iOS Software Engineer (SwiftUI, Swift, Objective‑C, Flutter). 9+ years experience in Banking/FinTech. Pune, India." />
+  <meta name="author" content="Sujit Nachan" />
+  <meta property="og:title" content="Sujit Nachan – Lead iOS Developer" />
+  <meta property="og:description" content="Lead iOS Software Engineer (SwiftUI, Swift, Objective‑C, Flutter). 9+ years experience in Banking/FinTech." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://avatars.githubusercontent.com/u/0?v=4" />
+  <meta name="theme-color" content="#0ea5e9" />
+
+  <!-- Tailwind CSS CDN for quick, portable styling on GitHub Pages -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ["Inter", "ui-sans-serif", "system-ui", "-apple-system", "Segoe UI", "Roboto", "Helvetica Neue", "Arial", "Noto Sans", "sans-serif"] },
+        }
+      },
+      darkMode: 'class'
+    };
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    /* Smooth reveal */
+    .reveal { opacity: 0; transform: translateY(12px); transition: all .6s ease; }
+    .reveal.show { opacity: 1; transform: none; }
+    /* Print-friendly tweaks */
+    @media print { .no-print { display: none !important; } .print-bg { -webkit-print-color-adjust: exact; print-color-adjust: exact; } }
+    /* Link underline from left */
+    .link-underline { background-image: linear-gradient(currentColor, currentColor); background-position: 0% 100%; background-repeat: no-repeat; background-size: 0% 2px; transition: background-size .3s; }
+    .link-underline:hover { background-size: 100% 2px; }
+    /* Simple accordion */
+    details[open] summary svg { transform: rotate(180deg); }
+  </style>
+
+  <script>
+    // Persisted dark mode
+    const theme = localStorage.getItem('theme');
+    if (theme === 'dark' || (!theme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.classList.add('dark');
+    }
+  </script>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Sujit Nachan",
+      "jobTitle": "Lead Software Engineer (iOS)",
+      "address": {"@type": "PostalAddress", "addressLocality": "Pune", "addressCountry": "IN"},
+      "email": "mailto:sujit.nachan@gmail.com",
+      "telephone": "+91-9766237768",
+      "url": "https://sujitnachan.netlify.app/",
+      "sameAs": [
+        "https://www.linkedin.com/in/sujitnachan/",
+        "https://github.com/sujitnachan"
+      ],
+      "knowsAbout": ["SwiftUI", "Swift", "Objective-C", "Flutter", "Banking", "FinTech", "iOS Security", "CI/CD"]
+    }
+  </script>
+</head>
+<body class="bg-slate-50 text-slate-800 dark:bg-slate-950 dark:text-slate-100">
+  <!-- Sticky Header -->
+  <header class="sticky top-0 z-40 backdrop-blur bg-white/70 dark:bg-slate-900/60 border-b border-slate-200/60 dark:border-slate-800/80">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="flex items-center justify-between h-16">
+        <a href="#home" class="font-extrabold tracking-tight text-xl">SN</a>
+        <nav class="hidden md:flex gap-6 text-sm">
+          <a class="hover:text-sky-600 link-underline" href="#about">About</a>
+          <a class="hover:text-sky-600 link-underline" href="#skills">Skills</a>
+          <a class="hover:text-sky-600 link-underline" href="#experience">Experience</a>
+          <a class="hover:text-sky-600 link-underline" href="#certs">Certifications</a>
+          <a class="hover:text-sky-600 link-underline" href="#achievements">Achievements</a>
+          <a class="hover:text-sky-600 link-underline" href="#education">Education</a>
+          <a class="hover:text-sky-600 link-underline" href="#contact">Contact</a>
+        </nav>
+        <div class="flex items-center gap-2">
+          <button id="themeBtn" class="no-print rounded-xl px-3 py-2 text-sm border border-slate-200/80 dark:border-slate-800 hover:bg-slate-100 dark:hover:bg-slate-800" title="Toggle theme" aria-label="Toggle dark mode">🌗</button>
+          <a href="#" id="resumeLink" class="rounded-xl px-3 py-2 text-sm bg-sky-600 text-white hover:bg-sky-700">Download Résumé</a>
+          <button class="md:hidden rounded-xl px-3 py-2 text-sm border border-slate-200/80 dark:border-slate-800" id="menuBtn">☰</button>
+        </div>
+      </div>
+      <nav id="mobileMenu" class="md:hidden hidden pb-3">
+        <div class="flex flex-col gap-2 text-sm">
+          <a class="hover:text-sky-600" href="#about">About</a>
+          <a class="hover:text-sky-600" href="#skills">Skills</a>
+          <a class="hover:text-sky-600" href="#experience">Experience</a>
+          <a class="hover:text-sky-600" href="#certs">Certifications</a>
+          <a class="hover:text-sky-600" href="#achievements">Achievements</a>
+          <a class="hover:text-sky-600" href="#education">Education</a>
+          <a class="hover:text-sky-600" href="#contact">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="relative overflow-hidden">
+    <div class="max-w-6xl mx-auto px-4 py-16 md:py-24">
+      <div class="grid md:grid-cols-2 gap-10 items-center">
+        <div class="reveal">
+          <h1 class="text-4xl md:text-6xl font-extrabold leading-tight">Sujit Nachan</h1>
+          <p class="mt-3 text-lg md:text-xl text-slate-600 dark:text-slate-300">Lead Software Engineer (iOS) · 9+ years · Banking & FinTech</p>
+          <p class="mt-6 text-slate-700 dark:text-slate-300">Results‑oriented and innovative iOS engineer specializing in secure, scalable, and user‑centric apps. Strong leadership guiding teams from concept to deployment, translating complex requirements into clear, actionable deliverables.</p>
+          <div class="mt-8 flex flex-wrap gap-3">
+            <a href="mailto:sujit.nachan@gmail.com" class="rounded-xl px-4 py-2 bg-sky-600 text-white hover:bg-sky-700">Email</a>
+            <a href="https://www.linkedin.com/in/sujitnachan/" class="rounded-xl px-4 py-2 border border-slate-300 dark:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-800">LinkedIn</a>
+            <a href="https://sujitnachan.netlify.app/" class="rounded-xl px-4 py-2 border border-slate-300 dark:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-800">Portfolio</a>
+            <span class="px-4 py-2 rounded-xl border border-slate-300 dark:border-slate-700">Pune, India · +91‑9766237768</span>
+          </div>
+        </div>
+        <div class="reveal md:justify-self-end">
+          <div class="rounded-2xl p-6 bg-gradient-to-br from-sky-100 to-indigo-100 dark:from-slate-800 dark:to-slate-900 shadow-inner">
+            <ul class="grid grid-cols-2 gap-3 text-sm">
+              <li class="p-3 rounded-xl bg-white/70 dark:bg-slate-900/40 border border-slate-200 dark:border-slate-800">SwiftUI</li>
+              <li class="p-3 rounded-xl bg-white/70 dark:bg-slate-900/40 border">Swift</li>
+              <li class="p-3 rounded-xl bg-white/70 dark:bg-slate-900/40 border">Objective‑C</li>
+              <li class="p-3 rounded-xl bg-white/70 dark:bg-slate-900/40 border">Flutter</li>
+              <li class="p-3 rounded-xl bg-white/70 dark:bg-slate-900/40 border">RxSwift</li>
+              <li class="p-3 rounded-xl bg-white/70 dark:bg-slate-900/40 border">Xcode</li>
+              <li class="p-3 rounded-xl bg-white/70 dark:bg-slate-900/40 border">Azure Git / GitHub</li>
+              <li class="p-3 rounded-xl bg-white/70 dark:bg-slate-900/40 border">CI/CD</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-12 md:py-16 border-t border-slate-200/60 dark:border-slate-800/60">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-2xl font-bold">About</h2>
+      <p class="mt-4 max-w-4xl">Detail‑oriented, organized, and committed to excellence with a forward‑thinking approach to solving problems in fast‑paced environments. Proficient in SwiftUI, Swift, Flutter, and Objective‑C, with deep expertise in iOS security, scalable architectures, and accessibility.</p>
+      <div class="mt-6 grid md:grid-cols-3 gap-6">
+        <div class="p-5 rounded-2xl border border-slate-200 dark:border-slate-800">
+          <h3 class="font-semibold">Core Strengths</h3>
+          <ul class="mt-3 list-disc list-inside text-sm space-y-1">
+            <li>Translating complex requirements for non‑technical stakeholders</li>
+            <li>Guiding teams from concept to deployment</li>
+            <li>Security‑first mobile development</li>
+          </ul>
+        </div>
+        <div class="p-5 rounded-2xl border border-slate-200 dark:border-slate-800">
+          <h3 class="font-semibold">Tooling & Platforms</h3>
+          <ul class="mt-3 list-disc list-inside text-sm space-y-1">
+            <li>Azure Git, GitHub, Bitbucket, GitLab, SourceTree</li>
+            <li>Xcode, Android Studio</li>
+            <li>LaunchDarkly, Kibana, Dynatrace, SwiftLint</li>
+            <li>Feature flags, APM/observability</li>
+          </ul>
+        </div>
+        <div class="p-5 rounded-2xl border border-slate-200 dark:border-slate-800">
+          <h3 class="font-semibold">Domains</h3>
+          <ul class="mt-3 list-disc list-inside text-sm space-y-1">
+            <li>Banking</li>
+            <li>FinTech</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="py-12 md:py-16">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-2xl font-bold">Technical Proficiency</h2>
+      <div class="mt-6 grid md:grid-cols-2 gap-6">
+        <div class="rounded-2xl border border-slate-200 dark:border-slate-800 p-5">
+          <h3 class="font-semibold">Development</h3>
+          <p class="mt-2 text-sm">SwiftUI, Swift, Flutter, RxSwift, Objective‑C</p>
+        </div>
+        <div class="rounded-2xl border border-slate-200 dark:border-slate-800 p-5">
+          <h3 class="font-semibold">Version Control</h3>
+          <p class="mt-2 text-sm">Azure Git, GitHub, Bitbucket, GitLab, SourceTree</p>
+        </div>
+        <div class="rounded-2xl border border-slate-200 dark:border-slate-800 p-5">
+          <h3 class="font-semibold">IDE & Tools</h3>
+          <p class="mt-2 text-sm">Xcode, Android Studio, SwiftLint</p>
+        </div>
+        <div class="rounded-2xl border border-slate-200 dark:border-slate-800 p-5">
+          <h3 class="font-semibold">Feature & Observability</h3>
+          <p class="mt-2 text-sm">LaunchDarkly, Kibana, Dynatrace</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience" class="py-12 md:py-16 bg-slate-100/60 dark:bg-slate-900/30">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-2xl font-bold">Work History</h2>
+      <div class="mt-6 space-y-4">
+        <!-- Virtusa -->
+        <details class="rounded-2xl border border-slate-200 dark:border-slate-800 p-5" open>
+          <summary class="cursor-pointer flex items-center justify-between">
+            <div>
+              <h3 class="font-semibold">Virtusa — Lead Software Engineer (Banking Domain)</h3>
+              <p class="text-sm text-slate-600 dark:text-slate-400">Apr 2023 – Present · Skills: Coordinator pattern, ContentSquare, Unit tests, Azure Git, Flutter, SwiftLint, Kibana, Dynatrace, LaunchDarkly</p>
+            </div>
+            <svg class="w-5 h-5 transition-transform" viewBox="0 0 20 20" fill="currentColor"><path d="M5.23 7.21a.75.75 0 011.06.02L10 11.17l3.71-3.94a.75.75 0 111.08 1.04l-4.24 4.5a.75.75 0 01-1.08 0L5.21 8.27a.75.75 0 01.02-1.06z"/></svg>
+          </summary>
+          <ul class="mt-4 list-disc list-inside space-y-2 text-sm">
+            <li>Engineered security architecture for Personal Banking app: AES for symmetric encryption, RSA for key exchange, iOS Keychain for hardware‑backed storage.</li>
+            <li>Strengthened data transmission via HTTPS with SSL/TLS and enforced certificate/public key pinning to eliminate MITM risks.</li>
+            <li>Implemented MFA workflows with Face ID, Touch ID, OAuth 2.0, token‑based session management.</li>
+            <li>Optimized onboarding journey for smooth, secure, user‑friendly experience.</li>
+            <li>Increased code coverage by adding unit tests; built new feature for vulnerable customers with fresh UI and API integration.</li>
+            <li>Designed iPad‑specific screens considering size, resolution, UI elements; contributed to team‑building and collaboration.</li>
+          </ul>
+        </details>
+        <!-- Wipro -->
+        <details class="rounded-2xl border border-slate-200 dark:border-slate-800 p-5">
+          <summary class="cursor-pointer flex items-center justify-between">
+            <div>
+              <h3 class="font-semibold">Wipro Technologies — Senior Software Engineer (Banking Domain)</h3>
+              <p class="text-sm text-slate-600 dark:text-slate-400">Mar 2021 – Mar 2023 · Skills: Clean architecture, Tealium, Unit/UI Tests, GitHub Desktop, CI/CD</p>
+            </div>
+            <svg class="w-5 h-5 transition-transform" viewBox="0 0 20 20" fill="currentColor"><path d="M5.23 7.21a.75.75 0 011.06.02L10 11.17l3.71-3.94a.75.75 0 111.08 1.04l-4.24 4.5a.75.75 0 01-1.08 0L5.21 8.27a.75.75 0 01.02-1.06z"/></svg>
+          </summary>
+          <ul class="mt-4 list-disc list-inside space-y-2 text-sm">
+            <li>Implemented AES & RSA encryption for sensitive data; secure storage using iOS Keychain.</li>
+            <li>Ensured end‑to‑end protection in transit via HTTPS/SSL‑TLS; integrated certificate pinning to prevent MITM.</li>
+            <li>Enhanced auth with Face ID, Touch ID, OAuth, token‑based flows.</li>
+            <li>Resolved problems, improved operations, and provided exceptional service; maintained stellar attendance.</li>
+            <li>Rapidly learned new skills and applied to daily tasks, improving efficiency and productivity.</li>
+            <li>Used coordination and planning skills to achieve results on schedule; participated in team‑building.</li>
+          </ul>
+        </details>
+        <!-- Hucon Solutions -->
+        <details class="rounded-2xl border border-slate-200 dark:border-slate-800 p-5">
+          <summary class="cursor-pointer flex items-center justify-between">
+            <div>
+              <h3 class="font-semibold">Hucon Solutions — Senior iOS Developer</h3>
+              <p class="text-sm text-slate-600 dark:text-slate-400">Dec 2020 – Mar 2021 · Skills: CoreData, CoreLocation, MVVM, AVFoundation, GitHub</p>
+            </div>
+            <svg class="w-5 h-5 transition-transform" viewBox="0 0 20 20" fill="currentColor"><path d="M5.23 7.21a.75.75 0 011.06.02L10 11.17l3.71-3.94a.75.75 0 111.08 1.04l-4.24 4.5a.75.75 0 01-1.08 0L5.21 8.27a.75.75 0 01.02-1.06z"/></svg>
+          </summary>
+          <ul class="mt-4 list-disc list-inside space-y-2 text-sm">
+            <li>Applied Agile methodology to elevate outcomes and streamline development efforts.</li>
+            <li>Researched and selected APIs for integration; integrated existing third‑party APIs to shorten timelines.</li>
+            <li>Partnered with QA to confirm compatibility with analogous platform solutions.</li>
+          </ul>
+        </details>
+        <!-- Ansh Systems -->
+        <details class="rounded-2xl border border-slate-200 dark:border-slate-800 p-5">
+          <summary class="cursor-pointer flex items-center justify-between">
+            <div>
+              <h3 class="font-semibold">Ansh Systems — iOS Developer</h3>
+              <p class="text-sm text-slate-600 dark:text-slate-400">Mar 2019 – Dec 2020 · Skills: Google Maps API, Google/Facebook Sign‑In, Objective‑C, Swift 5, CoreData, CoreLocation, MVVM, GitHub, SourceTree</p>
+            </div>
+            <svg class="w-5 h-5 transition-transform" viewBox="0 0 20 20" fill="currentColor"><path d="M5.23 7.21a.75.75 0 011.06.02L10 11.17l3.71-3.94a.75.75 0 111.08 1.04l-4.24 4.5a.75.75 0 01-1.08 0L5.21 8.27a.75.75 0 01.02-1.06z"/></svg>
+          </summary>
+          <ul class="mt-4 list-disc list-inside space-y-2 text-sm">
+            <li>Followed Apple's Human Interface Guidelines for iOS‑native UI.</li>
+            <li>Founded code review meetings to detect weaknesses pre‑release.</li>
+            <li>Collaborated with stakeholders to deliver measurable business value.</li>
+            <li>Delivered products/services to customers within defined SLAs.</li>
+          </ul>
+        </details>
+        <!-- CodeToArt -->
+        <details class="rounded-2xl border border-slate-200 dark:border-slate-800 p-5">
+          <summary class="cursor-pointer flex items-center justify-between">
+            <div>
+              <h3 class="font-semibold">CodeToArt Technologies Pvt. Ltd. — iOS Developer</h3>
+              <p class="text-sm text-slate-600 dark:text-slate-400">Dec 2017 – Mar 2019 · Skills: Google/Apple Maps, Objective‑C, Swift 4, CoreData, CoreLocation, MVVM, GitHub, SourceTree</p>
+            </div>
+            <svg class="w-5 h-5 transition-transform" viewBox="0 0 20 20" fill="currentColor"><path d="M5.23 7.21a.75.75 0 011.06.02L10 11.17l3.71-3.94a.75.75 0 111.08 1.04l-4.24 4.5a.75.75 0 01-1.08 0L5.21 8.27a.75.75 0 01.02-1.06z"/></svg>
+          </summary>
+          <ul class="mt-4 list-disc list-inside space-y-2 text-sm">
+            <li>Coded native iOS apps in Swift.</li>
+            <li>Designed QA testing for junior developers' output to boost productivity.</li>
+            <li>Mentored juniors on Swift; designed UX frameworks for iPhone & iPad.</li>
+          </ul>
+        </details>
+        <!-- Bitcode -->
+        <details class="rounded-2xl border border-slate-200 dark:border-slate-800 p-5">
+          <summary class="cursor-pointer flex items-center justify-between">
+            <div>
+              <h3 class="font-semibold">Bitcode Technologies — Software Associate</h3>
+              <p class="text-sm text-slate-600 dark:text-slate-400">Mar 2016 – Dec 2017 · Skills: Google Maps API, Google/Facebook Sign‑In, Objective‑C, Swift 2.2, MVC, GitHub, SourceTree</p>
+            </div>
+            <svg class="w-5 h-5 transition-transform" viewBox="0 0 20 20" fill="currentColor"><path d="M5.23 7.21a.75.75 0 011.06.02L10 11.17l3.71-3.94a.75.75 0 111.08 1.04l-4.24 4.5a.75.75 0 01-1.08 0L5.21 8.27a.75.75 0 01.02-1.06z"/></svg>
+          </summary>
+          <ul class="mt-4 list-disc list-inside space-y-2 text-sm">
+            <li>Maintained and shipped new iOS applications; corrected/optimized software for performance.</li>
+            <li>Collaborated with performance engineers to enhance supportability and remove bottlenecks.</li>
+            <li>Built, tested, and deployed scalable, modular products.</li>
+          </ul>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certifications -->
+  <section id="certs" class="py-12 md:py-16">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-2xl font-bold">Certifications</h2>
+      <ul class="mt-4 grid md:grid-cols-2 gap-4 text-sm">
+        <li class="p-5 rounded-2xl border border-slate-200 dark:border-slate-800"><strong>iOS Development Complete Guide</strong> — Bitcode Institute Pune (2016)</li>
+        <li class="p-5 rounded-2xl border border-slate-200 dark:border-slate-800"><strong>Flutter & Dart – The Complete Guide</strong> — Udemy (2023)</li>
+        <li class="p-5 rounded-2xl border border-slate-200 dark:border-slate-800"><strong>LaunchDarkly Bronze Developer</strong> — LaunchDarkly (2025)</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Achievements -->
+  <section id="achievements" class="py-12 md:py-16 bg-slate-100/60 dark:bg-slate-900/30">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-2xl font-bold">Achievements</h2>
+      <ul class="mt-4 space-y-3 text-sm">
+        <li class="p-5 rounded-2xl border border-slate-200 dark:border-slate-800">Reduced app crashes through proactive performance optimization and memory management.</li>
+        <li class="p-5 rounded-2xl border border-slate-200 dark:border-slate-800">Accelerated release cycles via CI/CD streamlining, automated testing, improved code review workflows.</li>
+        <li class="p-5 rounded-2xl border border-slate-200 dark:border-slate-800">Spearheaded migration from Objective‑C to Swift/SwiftUI, improving maintainability and velocity.</li>
+        <li class="p-5 rounded-2xl border border-slate-200 dark:border-slate-800">Developed cross‑platform modules using Flutter to reduce secondary‑platform effort.</li>
+        <li class="p-5 rounded-2xl border border-slate-200 dark:border-slate-800">Implemented accessibility (VoiceOver, Dynamic Type) achieving 100% compliance score.</li>
+        <li class="p-5 rounded-2xl border border-slate-200 dark:border-slate-800">Established code quality standards and peer reviews, reducing post‑release defects by 35%.</li>
+        <li class="p-5 rounded-2xl border border-slate-200 dark:border-slate-800">Created automated UI/unit tests covering 85% of critical flows, lowering regression bugs.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section id="education" class="py-12 md:py-16">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-2xl font-bold">Education</h2>
+      <div class="mt-6 grid md:grid-cols-3 gap-6 text-sm">
+        <div class="p-5 rounded-2xl border border-slate-200 dark:border-slate-800">
+          <h3 class="font-semibold">B.E. Information Technology</h3>
+          <p>Pune University — 2015 · 67%</p>
+        </div>
+        <div class="p-5 rounded-2xl border border-slate-200 dark:border-slate-800">
+          <h3 class="font-semibold">Diploma in Computer Engineering</h3>
+          <p>MSBTE — 2012 · 73%</p>
+        </div>
+        <div class="p-5 rounded-2xl border border-slate-200 dark:border-slate-800">
+          <h3 class="font-semibold">SSC</h3>
+          <p>State Board of Maharashtra — 2009 · 79%</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-12 md:py-16 bg-slate-100/60 dark:bg-slate-900/30">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-2xl font-bold">Contact</h2>
+      <div class="mt-6 grid md:grid-cols-2 gap-6">
+        <div class="rounded-2xl border border-slate-200 dark:border-slate-800 p-5">
+          <p class="text-sm">I'm open to Lead iOS roles and challenging projects. Reach out:</p>
+          <ul class="mt-3 text-sm space-y-2">
+            <li><a class="link-underline" href="mailto:sujit.nachan@gmail.com">sujit.nachan@gmail.com</a></li>
+            <li><a class="link-underline" href="https://www.linkedin.com/in/sujitnachan/">linkedin.com/in/sujitnachan</a></li>
+            <li><a class="link-underline" href="https://sujitnachan.netlify.app/">sujitnachan.netlify.app</a></li>
+            <li>Pune, India · +91‑9766237768</li>
+          </ul>
+        </div>
+        <form class="rounded-2xl border border-slate-200 dark:border-slate-800 p-5" onsubmit="event.preventDefault(); alert('Thanks! This static form is a demo. Link it to Formspree or Netlify Forms for production.');">
+          <label class="block text-sm font-medium">Your Name</label>
+          <input class="mt-1 w-full rounded-xl border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-900 px-3 py-2" required>
+          <label class="block text-sm font-medium mt-4">Email</label>
+          <input type="email" class="mt-1 w-full rounded-xl border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-900 px-3 py-2" required>
+          <label class="block text-sm font-medium mt-4">Message</label>
+          <textarea rows="4" class="mt-1 w-full rounded-xl border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-900 px-3 py-2" required></textarea>
+          <button class="mt-4 w-full rounded-xl px-4 py-2 bg-sky-600 text-white hover:bg-sky-700">Send</button>
+          <p class="mt-2 text-xs text-slate-500">Tip: Replace this with Formspree/Netlify Forms to enable submissions on GitHub Pages.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-10">
+    <div class="max-w-6xl mx-auto px-4 text-sm flex flex-col md:flex-row items-center justify-between gap-4">
+      <p>© <span id="year"></span> Sujit Nachan. All rights reserved.</p>
+      <div class="flex gap-4">
+        <a class="link-underline" href="mailto:sujit.nachan@gmail.com">Email</a>
+        <a class="link-underline" href="https://www.linkedin.com/in/sujitnachan/">LinkedIn</a>
+        <a class="link-underline" href="https://sujitnachan.netlify.app/">Portfolio</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Simple reveal on scroll
+    const io = new IntersectionObserver((entries)=>{
+      entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('show'); io.unobserve(e.target);} })
+    },{ threshold:.08 });
+    document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+
+    // Theme toggle
+    document.getElementById('themeBtn').addEventListener('click', ()=>{
+      const root = document.documentElement;
+      const isDark = root.classList.toggle('dark');
+      localStorage.setItem('theme', isDark ? 'dark' : 'light');
+    });
+
+    // Mobile menu
+    document.getElementById('menuBtn')?.addEventListener('click', ()=>{
+      const m = document.getElementById('mobileMenu');
+      m.classList.toggle('hidden');
+    });
+
+    // Current year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Set resume PDF link if hosted in same repo (place SujitNachanResume.pdf in root)
+    document.getElementById('resumeLink').setAttribute('href', './SujitNachanResume.pdf');
+  </script>
+</body>
+</html>
